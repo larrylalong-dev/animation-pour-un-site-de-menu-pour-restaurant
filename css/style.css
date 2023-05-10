@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+  
+
+*
+ {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+
+}
+
+main {
+    padding:0 16px;
+}  
+
+header {
+    font-family: "shrikhand", cursive;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px  lightgrey;
+    padding: 6px;
+    margin: 0;
+    position: relative;
+}
+
+main .ville {
+    background-color: #f3f3f3;
+    text-align:center;
+    padding: 8px;
+}
+
+/* Loading */
+
+.loader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+    position: fixed;
+    background-color: #ffffffff;
+    height: 100vh;
+   inset: 0;
+   z-index: 1;
+   animation: disappear 200ms 3s forwards ;
+   transform-origin: top;
+}  
+
+@keyframes disappear {
+    to {transform: scale(0);}
+}
+
+
+.loading {
+  
+   margin: auto;
+    margin-top: 100px ; 
+    margin-bottom: 100px;
+    border: 16px solid #bdc3c7;
+    width: 120px;
+    height: 120px;
+    border-top-color: #99E2D0;
+    border-bottom-color:#99E2D0;
+    border-radius: 50%;
+    animation: chargement 3s infinite ;
+
+}
+
+
+@keyframes chargement {
+    0% {
+        transform: rotate(0deg) scale(1)
+    }
+
+    25% { border-top-color: #9356DC;
+    border-bottom-color: #9356DC;}
+    50% {
+        transform: rotate(360deg) scale(1.15);
+        border-top-color: #FF79DA;
+        border-bottom-color: #FF79DA;
+
+    }
+    75% {  border-top-color: #BCDEB1;
+        border-bottom-color: #BCDEB1;
+       
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+      
+        border-top-color: #99E2D0;
+        border-bottom-color:#99E2D0 ;
+    }
+}
+ 
+
+/* Explorer */
+
+.explorer {
+   text-align: center;
+}
+.explorer h2 {
+    margin-top: 32px;
+    font-size: 32px
+}
+
+.explorer p {
+    font-size: 16px;
+}
+.explorer button {
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 1px 1px 10px -3px black;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition: transform 200ms;
+    margin-top: 32px;
+
+}
+
+.explorer button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.fonctionnement li {
+    position: relative;
+    background-color: #f6f6f6;
+    padding: 24px 32px;
+    flex-grow: 1;
+    border-radius: 16px;
+    box-shadow:  4px 4px 8px #00000012;
+    list-style-type: none;
+
+
+}
+
+
+.fonctionnement li div {
+        background-color: #9356DC;
+        width: 32px;
+        height: 32px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        position: absolute;
+        left: -16px;
+        bottom: 16px;
+
+    }
+
+.h2fonctionnement {
+    margin-left: 32px;
+}
+.fonctionnement ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    flex-direction:column ;
+    font-weight: bold;
+
+
+
+}
+.fonctionnement ol li div { 
+    color: white;
+}
+
+ ol i {
+     margin: 0px 15px 0 0;
+     color: gray;
+ }
+
+ .fonctionnement li:hover {
+     background-color: #f0dbff;
+     cursor: pointer;
+ }
+
+ .fonctionnement li:hover i {
+     color: #9356DC;
+ }
+
+.menus {
+    background-color: #f6f6f6;
+
+
+}
+ /* Heart */
+
+.fa-heart {
+    position: relative;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+.fa-heart:hover{
+
+    animation: heart 0.5s 0s forwards;
+  
+}
+
+@keyframes heart {
+0% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+10% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+20% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+30% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+40% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+50% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+60% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+70% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+80% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+90% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+100% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+}
+
+.fa-heart {
+position: relative;
+font-size: 1.5rem;
+background-color: transparent;
+border: none;
+margin-right: 10px;
+padding: 0;
+margin-bottom: 30px;
+}
+
+
+/* Cartes*/
+
+.carte {
+    height: 18rem;
+    flex-grow: 1;
+    width: 100%;
+    background-color: white;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow:  4px 4px 8px #00000012;
+
+}
+
+.menus-carte {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 32px 64px 32px;
+
+}
+
+.menus h2 {
+
+    margin: 34px 16px 16px ;
+    padding: 50px 0 20px 20px   ;
+}
+
+
+.carte-image {
+    height: 192px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.carte-description {
+    position: relative;
+
+    margin-left: 16px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carte:hover {
+    filter: brightness(1.15);
+    box-shadow: 1px 1px 10px -3px black;
+}
+
+/* Nouveau */
+
+.nouveau {
+    position: relative;
+}
+.nouveau::before {
+    content: "Nouveau";
+    position: absolute;
+    height: 32px;
+    width: 80px;
+    background-color:#99E2D0;
+    display: grid;
+    place-items: center;
+    right: 16px;
+    top: 16px;
+    color: green;
+}
+
+.carte-description i {
+
+    font-size: 32px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Footer */
+
+footer { 
+    background-color: #4A3F3F;
+    padding: 16px 32px;
+}
+
+.omf {
+    font-family: shrikhand;
+    color: white;
+    font-weight: 500;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+
+footer i {
+    margin: 0 10px 0 0;
+    width: 1rem;
+}
+i.fas.fa-ustensils {
+    margin: 10px;
+}
+
+
+/* Responsive */
+
+@media (min-width:960px) {
+
+    .fonctionnement ol {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;}
+
+    li  {
+        width: 20%;
+    }
+
+    .menus-carte {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+}
+
